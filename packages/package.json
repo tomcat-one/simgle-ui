@@ -1,7 +1,7 @@
 {
   "name": "simgle-ui",
   "private": false,
-  "version": "0.0.18",
+  "version": "0.0.20",
   "main": "lib/components/index.cjs",
   "module": "es/components/index.js",
   "description": "基于vue3的移动端组件库",
@@ -12,6 +12,7 @@
     "pub": "npm publish --registry https://registry.npmjs.org/",
     "lint": "eslint ./src/**/*.{js,jsx,vue,ts,tsx} --fix",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "update:version": "pnpm version patch",
     "plop": "plop"
   },
   "repository": {

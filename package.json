@@ -8,7 +8,8 @@
     "build:examples": "pnpm -C examples build",
     "build:ui": "pnpm -C packages build",
     "build": "pnpm build:ui",
-    "publish:ui": "pnpm -C packages pub && pnpm build:docs"
+    "publish:ui": "pnpm -C packages pub && pnpm build:docs",
+    "update:ui": "pnpm -C packages update:version"
   },
   "keywords": [],
   "author": "waywordcode",
@@ -17,7 +18,7 @@
     "lodash-es": "^4.17.21",
     "normalize.css": "^8.0.1",
     "pinia": "^2.0.23",
-    "simgle-ui": "workspace:^1.0.16",
+    "simgle-ui": "workspace:^0.0.18",
     "vue": "^3.2.41",
     "vue-router": "^4.1.5"
   },
@@ -58,7 +59,8 @@
       "scripts.build": "即执行build:ui指令",
       "scripts.publish:ui": "发布组件库，需要先升级组件库的版本号",
       "type": "采用module规范即es6",
-      "json-comments": "插件注释,配合json-ccomments插件"
+      "json-comments": "插件注释,配合json-ccomments插件",
+      "scripts.update:ui": "更新组件库版本，需要再publish之前执行这条指令"
     }
   }
 }
