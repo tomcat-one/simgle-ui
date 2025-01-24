@@ -1,4 +1,4 @@
-import { computed as r, resolveComponent as f, openBlock as o, createElementBlock as n, createElementVNode as i, normalizeClass as b, unref as y, normalizeStyle as v, createCommentVNode as l, renderSlot as m, createVNode as g } from "vue";
+import { computed as b, resolveComponent as f, openBlock as o, createElementBlock as n, createElementVNode as i, normalizeClass as v, normalizeStyle as y, createCommentVNode as l, renderSlot as m, createVNode as g } from "vue";
 import "./button.vue_vue_type_style_index_0_lang.js";
 const k = ["disabled"], S = { class: "uv-button-content" }, z = {
   key: 0,
@@ -11,7 +11,7 @@ const k = ["disabled"], S = { class: "uv-button-content" }, z = {
   class: "uv-button-content-icon-right"
 }, B = {
   name: "SButton"
-}, q = /* @__PURE__ */ Object.assign(B, {
+}, q = Object.assign(B, {
   props: {
     type: {
       type: String,
@@ -68,7 +68,7 @@ const k = ["disabled"], S = { class: "uv-button-content" }, z = {
   },
   emits: ["click"],
   setup(t, { emit: c }) {
-    const e = t, u = r(() => [
+    const e = t, a = c, u = b(() => [
       "uv-button",
       e.type ? e.disabled ? "" : `uv-button-${e.type}` : "",
       e.disabled ? `uv-button-${e.type}-disabled` : "",
@@ -76,24 +76,24 @@ const k = ["disabled"], S = { class: "uv-button-content" }, z = {
       e.square ? "uv-button-square" : "",
       e.size ? `uv-button-size-${e.size}` : "",
       e.block ? "uv-button-block" : ""
-    ]), a = () => {
-      c("click");
+    ]), s = () => {
+      a("click");
     };
-    return (s, p) => {
-      const d = f("uv-icon");
+    return (d, p) => {
+      const r = f("uv-icon");
       return o(), n("div", null, [
         i("button", {
-          class: b(y(u)),
+          class: v(u.value),
           disabled: t.disabled,
-          style: v({ backgroundColor: t.bgColor, color: t.color }),
-          onClick: a
+          style: y({ backgroundColor: t.bgColor, color: t.color }),
+          onClick: s
         }, [
           i("div", S, [
             t.icon && t.iconPosition === "left" ? (o(), n("div", z)) : l("", !0),
             t.loading ? (o(), n("div", C)) : l("", !0),
-            m(s.$slots, "default"),
+            m(d.$slots, "default"),
             t.icon && t.iconPosition === "right" ? (o(), n("div", h, [
-              g(d, {
+              g(r, {
                 name: t.icon,
                 color: t.iconColor,
                 size: t.iconSize

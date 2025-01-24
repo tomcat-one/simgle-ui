@@ -1,7 +1,7 @@
 {
   "name": "simgle-ui",
   "private": false,
-  "version": "0.0.20",
+  "version": "0.0.19",
   "main": "lib/components/index.cjs",
   "module": "es/components/index.js",
   "description": "基于vue3的移动端组件库",
@@ -18,7 +18,7 @@
   "repository": {
     "type": "git",
     "url": "xxxxxx",
-    "directory": "packages/simgle-ui"
+    "directory": "packages/xxxxxx"
   },
   "keywords": [
     "vue3组件库"
