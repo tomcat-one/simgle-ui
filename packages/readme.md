@@ -24,5 +24,5 @@ import 'simgle-ui/es/style.css'
 ```
 
 ```
-import { sButton } from 'simgle-ui'
+import { uvButton } from 'uv-ui'
 ```

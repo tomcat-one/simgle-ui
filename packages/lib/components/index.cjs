@@ -1,0 +1,1 @@
+"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const t=require("./button/index.cjs"),n=require("../utils/type.cjs"),o=[t],u=s=>{o.forEach(e=>{s.component(e.name,e)})};exports.sButton=t;exports.types=n;exports.default=u;
